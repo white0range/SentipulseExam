@@ -1,0 +1,22 @@
+{
+  "name": "keyword-tagger",
+  "version": "1.0.0",
+  "description": "Finds configured keywords inside the input text.",
+  "runtime": "go",
+  "tags": ["text", "search"],
+  "enabled": false,
+  "command": [
+    "go",
+    "run",
+    "."
+  ],
+  "work_dir": ".",
+  "timeout_ms": 15000,
+  "dependencies": [
+    {
+      "name": "wordcount",
+      "version": ">=1.0.0"
+    }
+  ],
+  "on_dependency_failure": "continue"
+}

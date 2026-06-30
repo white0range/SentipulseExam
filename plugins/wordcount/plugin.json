@@ -1,0 +1,16 @@
+{
+  "name": "wordcount",
+  "version": "1.0.0",
+  "description": "Counts words, lines, and characters from the input text.",
+  "runtime": "go",
+  "tags": ["text", "metrics"],
+  "enabled": true,
+  "command": [
+    "go",
+    "run",
+    "."
+  ],
+  "work_dir": ".",
+  "timeout_ms": 15000,
+  "on_failure": "disable"
+}

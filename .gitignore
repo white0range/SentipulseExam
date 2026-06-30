@@ -1,0 +1,4 @@
+.idea/
+*.exe
+watch-output.txt
+watch-error.txt

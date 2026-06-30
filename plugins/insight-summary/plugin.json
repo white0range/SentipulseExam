@@ -1,0 +1,31 @@
+{
+  "name": "insight-summary",
+  "version": "1.0.0",
+  "description": "Builds a human-readable summary from upstream plugin results.",
+  "runtime": "go",
+  "tags": [
+    "summary",
+    "dependency-demo"
+  ],
+  "enabled": true,
+  "command": [
+    "go",
+    "run",
+    "."
+  ],
+  "work_dir": ".",
+  "timeout_ms": 15000,
+  "dependencies": [
+    {
+      "name": "wordcount",
+      "version": ">=1.0.0"
+    },
+    {
+      "name": "keyword-tagger",
+      "version": ">=1.0.0",
+      "optional": true,
+      "require_success": false
+    }
+  ],
+  "on_dependency_failure": "skip"
+}
